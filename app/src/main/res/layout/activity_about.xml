@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abs.inputmethod.pinyin.AboutActivity">
+
+    <include layout="@layout/title_layout" />
+
+    <ImageView
+        android:id="@+id/about_icon"
+        android:layout_width="80dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="showVersionCode"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout"
+        android:layout_marginTop="60dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/about_version_tv"
+        android:layout_width="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_icon"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="15dp"
+        android:text="摩尔斯输入法v1.0.0"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

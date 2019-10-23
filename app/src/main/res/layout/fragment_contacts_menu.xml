@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="124dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fragment_contact_menu_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragment_contacts_menu_add"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fragment_contact_menu_icon_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="@string/add_contact"
+            android:textColor="#333333"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="124dp"
+        android:layout_height="1dp"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/fragment_contacts_menu_import"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fragment_contact_menu_icon_import" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="@string/import_contact"
+            android:textColor="#333333"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="124dp"
+        android:layout_height="1dp"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/fragment_contacts_menu_export"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fragment_contact_menu_icon_export" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="@string/export_contact"
+            android:textColor="#333333"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

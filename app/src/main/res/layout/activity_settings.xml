@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <include layout="@layout/title_layout" />
+
+    <View
+        android:id="@+id/settings_key_voice_layout"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按键声音"
+        android:layout_marginLeft="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#333333"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_key_voice_layout"
+        app:layout_constraintTop_toTopOf="@+id/settings_key_voice_layout" />
+    
+    <CheckBox
+        android:id="@+id/settings_key_voice_cb"
+        android:layout_width="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dp"
+        android:button="@drawable/custom_checkbox"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_key_voice_layout"
+        app:layout_constraintTop_toTopOf="@+id/settings_key_voice_layout" />
+
+
+    <View
+        android:id="@+id/settings_key_voice_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="17dp"
+        android:background="#ececec"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_key_voice_layout"></View>
+
+    <View
+        android:id="@+id/settings_key_vibration_layout"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_key_voice_divider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按键震动"
+        android:layout_marginLeft="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#333333"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_key_vibration_layout"
+        app:layout_constraintTop_toTopOf="@+id/settings_key_vibration_layout" />
+
+    <CheckBox
+        android:id="@+id/settings_key_vibration_cb"
+        android:layout_width="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dp"
+        android:button="@drawable/custom_checkbox"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_key_vibration_layout"
+        app:layout_constraintTop_toTopOf="@+id/settings_key_vibration_layout" />
+
+
+    <View
+        android:id="@+id/settings_key_vibration_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="17dp"
+        android:background="#ececec"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_key_vibration_layout"></View>
+
+    <View
+        android:id="@+id/settings_key_prediction_layout"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_key_vibration_divider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联想输入"
+        android:layout_marginLeft="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#333333"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_key_prediction_layout"
+        app:layout_constraintTop_toTopOf="@+id/settings_key_prediction_layout" />
+
+    <CheckBox
+        android:id="@+id/settings_key_prediction_cb"
+        android:layout_width="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dp"
+        android:button="@drawable/custom_checkbox"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_key_prediction_layout"
+        app:layout_constraintTop_toTopOf="@+id/settings_key_prediction_layout" />
+
+
+</android.support.constraint.ConstraintLayout>

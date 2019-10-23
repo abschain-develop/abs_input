@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mine_logout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#fff"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/mine_logout_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="17dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintBottom_toBottomOf="@+id/mine_logout_layout"
+            app:layout_constraintLeft_toLeftOf="@+id/mine_logout_layout"
+            app:layout_constraintTop_toTopOf="@+id/mine_logout_layout" />
+
+        <View
+            android:id="@+id/mine_logout_vertical_center_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mine_logout_layout"
+            app:layout_constraintLeft_toRightOf="@+id/mine_logout_icon"
+            app:layout_constraintRight_toRightOf="@+id/mine_logout_layout"
+            app:layout_constraintTop_toTopOf="@+id/mine_logout_layout" />
+
+        <TextView
+            android:id="@+id/mine_logout_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textColor="#4b3785"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/mine_logout_vertical_center_line"
+            app:layout_constraintLeft_toLeftOf="@+id/mine_logout_vertical_center_line" />
+
+        <TextView
+            android:id="@+id/mine_logout_text_hint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="立即登录，享受加密福利"
+            android:textColor="#4b3785"
+            android:textSize="15dp"
+            app:layout_constraintLeft_toLeftOf="@+id/mine_logout_vertical_center_line"
+            app:layout_constraintTop_toBottomOf="@+id/mine_logout_vertical_center_line" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mine_logged_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#fff"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/mine_logged_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="17dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mine_logged_text"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="middle"
+            android:maxWidth="165dp"
+            android:singleLine="true"
+            android:text="345678987567fdsfdsfdsfdsfd89"
+            android:textColor="#4b3785"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/mine_logged_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/mine_address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <ImageView
+                android:id="@+id/mine_address_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/mine_icon_address" />
+
+            <TextView
+                android:id="@+id/mine_address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/mine_address_icon"
+                android:text="正在通讯地址"
+                android:textColor="#4c4c4c"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/mine_address_hint_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/mine_address_text"
+                android:ellipsize="middle"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#4c4c4c"
+                android:textSize="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="17dp"
+                android:background="#ececec"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_import_pub_layout"
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <ImageView
+                android:id="@+id/mine_import_pub_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/mine_icon_export_pub_key" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/mine_import_pub_icon"
+                android:text="导出公钥"
+                android:textColor="#4c4c4c"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="17dp"
+                android:background="#ececec"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_settings_layout"
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <ImageView
+                android:id="@+id/mine_settings_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/mine_icon_settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/mine_settings_icon"
+                android:text="设置"
+                android:textColor="#4c4c4c"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="17dp"
+                android:background="#ececec"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_about_layout"
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <ImageView
+                android:id="@+id/mine_about_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/mine_icon_about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/mine_about_icon"
+                android:text="关于我们"
+                android:textColor="#4c4c4c"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

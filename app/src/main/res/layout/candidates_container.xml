@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<com.tb.inputmethod.pinyin.CandidatesContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/candidates_container"
+    android:layout_width="0dip"
+    android:layout_height="0dip"
+    android:background="#eeeeee"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/choose_contacts_btn"
+        android:layout_width="47dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/candidates_func_btn_bg"
+        android:clickable="true"
+        android:src="@drawable/candidates_choose_contacts_btn" />
+
+    <ImageButton
+        android:id="@+id/export_pub_key_btn"
+        android:layout_width="47dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/choose_contacts_btn"
+        android:background="@drawable/candidates_func_btn_bg"
+        android:clickable="true"
+        android:src="@drawable/candidates_export_btn" />
+
+    <ImageButton
+        android:id="@+id/arrow_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="4dp"
+        android:src="@drawable/arrow_left_btn"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/arrow_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:paddingLeft="4dp"
+        android:paddingRight="16dp"
+        android:src="@drawable/arrow_right_btn"
+        android:visibility="invisible" />
+
+    <ViewFlipper
+        android:id="@+id/candidate_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/arrow_right_btn"
+        android:layout_toRightOf="@id/arrow_left_btn">
+
+        <view
+            android:id="@+id/candidate_view1"
+            class="com.tb.inputmethod.pinyin.CandidateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <view
+            android:id="@+id/candidate_view2"
+            class="com.tb.inputmethod.pinyin.CandidateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewFlipper>
+</com.tb.inputmethod.pinyin.CandidatesContainer>

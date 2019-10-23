@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_contact_logout_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:src="@drawable/contacts_logout_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:text="您还未登录，请先登录才能使用该功能"
+        android:textColor="#adadad"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/fragment_contact_login_btn"
+        android:layout_width="341dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/import_confirm_btn_bg"
+        android:onClick="login"
+        android:text="立即登录"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+
+</LinearLayout>

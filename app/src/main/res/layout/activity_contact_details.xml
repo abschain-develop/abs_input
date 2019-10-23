@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abs.inputmethod.pinyin.contacts.ContactDetailsActivity">
+
+    <include layout="@layout/title_layout" />
+
+    <TextView
+        android:id="@+id/contact_details_nick_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="22dp"
+        android:text="昵称"
+        android:textColor="#333333"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout" />
+
+    <TextView
+        android:id="@+id/contact_details_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="21dp"
+        android:maxWidth="246dp"
+        android:textColor="#333333"
+        android:textSize="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contact_details_nick_hint" />
+
+    <View
+        android:id="@+id/contact_details_nick_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="21dp"
+        android:background="#ededed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_details_nick" />
+
+
+    <TextView
+        android:id="@+id/contact_details_address_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="钱包地址"
+        android:textColor="#333333"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/contact_details_nick_divider"
+        app:layout_constraintLeft_toLeftOf="@+id/contact_details_nick_hint" />
+
+    <com.abs.inputmethod.pinyin.contacts.IconFontTextView
+        android:id="@+id/contact_details_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="246dp"
+        android:textColor="#333333"
+        android:textSize="15dp"
+        app:layout_constraintRight_toRightOf="@+id/contact_details_nick"
+        app:layout_constraintTop_toTopOf="@+id/contact_details_address_hint" />
+
+    <View
+        android:id="@+id/contact_details_address_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="21dp"
+        android:background="#ededed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_details_address" />
+
+
+    <TextView
+        android:id="@+id/contact_details_pub_key_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="公钥"
+        android:textColor="#333333"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/contact_details_address_divider"
+        app:layout_constraintLeft_toLeftOf="@+id/contact_details_nick_hint" />
+
+    <com.abs.inputmethod.pinyin.contacts.IconFontTextView
+        android:id="@+id/contact_details_pub_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="246dp"
+        android:textColor="#333333"
+        android:textSize="15dp"
+        app:layout_constraintRight_toRightOf="@+id/contact_details_nick"
+        app:layout_constraintTop_toTopOf="@+id/contact_details_pub_key_hint" />
+
+    <View
+        android:id="@+id/contact_details_pub_key_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="21dp"
+        android:background="#ededed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_details_pub_key" />
+
+
+    <Button
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/contact_details_pub_key_divider"
+        app:layout_constraintRight_toRightOf="@id/contact_details_pub_key_divider"
+        app:layout_constraintTop_toBottomOf="@+id/contact_details_pub_key_divider"
+        android:text="删除联系人"
+        android:onClick="doDelete"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="84dp"
+        android:textSize="16dp"
+        android:background="@drawable/import_confirm_btn_bg"
+        android:layout_height="48dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/custom_dialog_bg_view"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custom_dialog_bg"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="26dp">
+
+        <TextView
+            android:id="@+id/custom_dialog_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#333333"
+            android:textSize="17dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/custom_dialog_message_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#333333"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/custom_dialog_cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:background="@drawable/custom_dialog_cancel_btn"
+                android:text="@string/cancel"
+                android:textColor="#C9C9C9"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/custom_dialog_confirm_btn"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/import_confirm_btn_bg"
+                android:text="@string/confirm"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/custom_dialog_bg_view"
+        android:layout_width="310dp"
+        android:background="@drawable/custom_dialog_bg"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="26dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/custom_dialog_title_tv"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:text="警告"
+            android:textColor="#333333"
+            android:textSize="17dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/custom_dialog_message_tv"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:text="需要登录摩尔斯输入法才能使用加解密功能，是否登录？"
+            android:textColor="#333333"
+            android:textSize="17dp"
+            android:layout_height="wrap_content" />
+        
+        <EditText
+            android:id="@+id/custom_dialog_content_et"
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_edit_text_bg"
+            android:layout_marginTop="24dp"
+            android:textColorHint="#C9C9C9"
+            android:textSize="14dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:layout_height="44dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="26dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/custom_dialog_cancel_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textColor="#C9C9C9"
+                android:text="@string/cancel"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/custom_dialog_cancel_btn"
+                android:layout_height="45dp" />
+
+            <Button
+                android:id="@+id/custom_dialog_confirm_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:text="@string/confirm"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/import_confirm_btn_bg"
+                android:layout_height="45dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

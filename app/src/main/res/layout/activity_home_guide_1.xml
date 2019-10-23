@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context="com.abs.inputmethod.pinyin.HomeActivity">
+
+    <include layout="@layout/title_layout" />
+
+    <TextView
+        android:id="@+id/input_method_not_open_hint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:text="@string/input_method_not_open_hint"
+        android:textColor="#adadad"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout" />
+
+
+    <TextView
+        android:id="@+id/input_method_open_first_title"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:text="第一步：启动摩尔斯输入法"
+        android:textColor="#333333"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_method_not_open_hint_tv" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="#ededed"
+        app:layout_constraintBottom_toBottomOf="@+id/input_method_open_first_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/input_method_open_first_sys"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:onClick="openInputMethod"
+        android:paddingLeft="17dp"
+        android:text="系统输入法"
+        android:textColor="#333333"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_method_open_first_title" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="#DEDEDE"
+        app:layout_constraintBottom_toBottomOf="@+id/input_method_open_first_sys"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/input_method_open_first_abs"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:onClick="openInputMethod"
+        android:paddingLeft="17dp"
+        android:text="摩尔斯输入法"
+        android:textColor="#333333"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_method_open_first_sys" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dp"
+        android:src="@drawable/home_guide_success_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/input_method_open_first_abs"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_method_open_first_abs" />
+
+    <TextView
+        android:id="@+id/input_method_open_first_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:text="如果系统提示输入法的风险，请放心点击确定，ABS输入法不会危害你的系统安全"
+        android:textColor="#adadad"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_method_open_first_abs" />
+
+    <Button
+        android:id="@+id/input_method_open_first_btn"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/import_confirm_btn_bg"
+        android:onClick="openInputMethod"
+        android:text="启用"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_method_open_first_notice" />
+
+
+    <TextView
+        android:id="@+id/input_method_open_second_title"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:text="第二步：设置为默认输入法"
+        android:textColor="#333333"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_method_open_first_btn" />
+
+</android.support.constraint.ConstraintLayout>

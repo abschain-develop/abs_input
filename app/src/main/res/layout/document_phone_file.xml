@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/document_phone_file_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout"></include>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="47dp"-->
+    <!--android:background="#f2f2f2"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/document_phone_file_path"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_marginLeft="12dp"-->
+    <!--android:layout_marginRight="12dp"-->
+    <!--android:background="@drawable/rounded_rect_white"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingLeft="12dp"-->
+    <!--android:paddingRight="12dp"-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="#b7b7c0"-->
+    <!--android:textSize="13dp" />-->
+    <!--</LinearLayout>-->
+
+    <com.abs.inputmethod.pinyin.utils.file_choose.CrumbView
+        android:id="@+id/crumb_view"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="17dp"
+        android:background="#ececec" />
+
+    <include layout="@layout/document_phone_file_none" />
+
+    <ListView
+        android:id="@+id/document_phone_file_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/document_phone_file_list_divider"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@drawable/document_phone_file_list_selector" />
+
+    <!--<View style="@style/mx_item_divider_style_no_margin" />-->
+
+    <!--<include layout="@layout/mx_document_file_bottom" />-->
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:indexBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_contact_lists_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.abs.inputmethod.pinyin.contacts.IndexBar
+        android:id="@+id/fragment_contact_lists_ib_indicator"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="5dp"
+        indexBar:indexTextColor="@color/grey_700"
+        indexBar:indexTextSize="10dp" />
+
+    <com.abs.inputmethod.pinyin.contacts.IconFontTextView
+        android:id="@+id/fragment_contact_lists_tv_indicator"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/index_bar_indicator_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:visibility="gone" />
+</FrameLayout>

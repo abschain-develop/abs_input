@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">摩尔斯输入法</string>
+    <string name="ime_settings_activity_name">摩尔斯输入法</string>
+    <!-- version = apk(java) + ime engine + sys dict + [hotlist (TBD)] -->
+    <string name="version" translatable="false">1.0.0</string>
+
+    <!-- Used by the toggle keys in soft keyboards.-->
+    <string name="toggle_cn" translatable="false">0</string>
+    <string name="toggle_cn_cand" translatable="false">1</string>
+    <string name="toggle_en_lower" translatable="false">2</string>
+    <string name="toggle_en_upper" translatable="false">3</string>
+    <string name="toggle_en_sym1" translatable="false">4</string>
+    <string name="toggle_en_sym2" translatable="false">5</string>
+    <string name="toggle_smiley" translatable="false">6</string>
+    <string name="toggle_enter_go" translatable="false">7</string>
+    <string name="toggle_enter_search" translatable="false">8</string>
+    <string name="toggle_enter_send" translatable="false">9</string>
+    <string name="toggle_enter_next" translatable="false">10</string>
+    <string name="toggle_enter_done" translatable="false">11</string>
+    <string name="toggle_row_cn" translatable="false">12</string>
+    <string name="toggle_row_en" translatable="false">13</string>
+    <string name="toggle_row_uri" translatable="false">14</string>
+    <string name="toggle_row_emailaddress" translatable="false">15</string>
+    <string name="toggle_phone_sym" translatable="false">3</string>
+
+    <!-- settings related -->
+    <string name="setting_sound_key" translatable="false">setting_sound_key</string>
+    <string name="setting_vibrate_key" translatable="false">setting_vibrate_key</string>
+    <string name="setting_prediction_key" translatable="false">setting_prediction_key</string>
+    <string name="setting_switch_key" translatable="false">setting_switch_key</string>
+    <string name="setting_advanced_key" translatable="false">setting_advanced_key</string>
+
+    <string name="setting">摩尔斯输入法设置</string>
+    <string name="setting_sound_key_title">按键声音</string>
+    <string name="setting_vibrate_title">按键震动</string>
+    <string name="setting_prediction_title">联想输入</string>
+    <string name="setting_switch_title">中英文切换</string>
+    <string name="setting_switch_shift_space_title" translatable="false">Shift-space</string>
+
+    <string name="setting_enabled">开启</string>
+    <string name="setting_disabled">关闭</string>
+
+    <string name="setting_others">其它设置</string>
+    <string name="setting_others_summary">词典同步等</string>
+    <string name="input_method_not_open_hint">摩尔斯输入法还没有启用，暂时无法为你服务。</string>
+    <string name="fragment_contacts_title">联系人</string>
+    <string name="add_contact">新建联系人</string>
+    <string name="import_contact">导入联系人</string>
+    <string name="cancel">取消</string>
+    <string name="modify_contact">编辑联系人</string>
+    <string name="export_contact">导出联系人</string>
+    <string name="confirm">确定</string>
+
+</resources>
